@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <!-- 
+          - primary meta tags
+        -->
+        <title>AuBook - Read More And Make Success</title>
+        <meta name="title" content="AuBook - Read More And Make Success">
+        <meta name="description"
+          content="Read More And Make Success The Result Of Perfection. - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad harum quibusdam, assumenda quia explicabo.">
+      
+        <!-- 
+          - favicon
+        -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+      
+        <!-- 
+          - custom css link
+        -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+      
+        <!-- 
+          - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet">
+      
+        <!-- 
+          - preload image
+        -->
+        <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+      
+    </head>
+<style>
+    body {
+        background-color: #F5EBE5;
+    }
+
+    .floating-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: rgba(0, 0, 0, 0.273);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .floating-button-stop {
+      position: fixed;
+      bottom: 20px;
+      right: 100px;
+      background-color: rgba(0, 0, 0, 0.273);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      padding: 15px;
+      cursor: pointer;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+</style>
+<body>
+    <header class="header" data-header>
+        <div class="container">
+    
+          <a href="#" class="logo">AuBook</a>
+    
+          <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+    
+              <li class="navbar-item">
+                <a href="index.html" class="navbar-link" data-nav-link onclick="stopSpeaking()">Home</a>
+              </li>
+    
+            </ul>
+          </nav>
+    
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+    
+            <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+          </button>
+    
+        </div>
+      </header>
+
+    <div class="halaman" >
+    
+    <h1>Chapter 1: Python Basics</h1>
+    <h2>Abstract</h2>
+    <p> This chapter will get you started with Python, using it as a calculator, managing Python packages, and helping you familiarize yourself with the Jupyter notebook. As you will see, Python has a great set of packages with expansive sets of functionalities. At the end of this chapter, you should be able to execute commands in Python, install and manage the Python packages in Jupyter notebook, and use Python's basic mathematical functions.</p>
+    <br>
+    <h2>1.1 Getting Started With Python</h2>
+    <p> The first step in using Python is to set up the working environment on the computer. This section introduces the initial processes to get it started.</p>
+    <br>
+    <p> There are different ways to install Python and related packages, and we recommend using Anaconda1 or Miniconda2 to install and manage your packages. Depending on the operating system (OS) you are using (i.e., Windows, Mac OS X, or Linux), you will need to download a specific installer for your machine. Both Anaconda and Miniconda are aimed at providing easy ways to manage the Python work environment in scientific computing and data sciences.</p>
+    <br>
+    <p> There are different ways to install Python and related packages, and we recommend using Anaconda1 or Miniconda2 to install and manage your packages. Depending on the operating system (OS) you are using (i.e., Windows, Mac OS X, or Linux), you will need to download a specific installer for your machine. Both Anaconda and Miniconda are aimed at providing easy ways to manage the Python work environment in scientific computing and data sciences.</p>
+    <!-- Tambahkan chapter lainnya sesuai kebutuhan -->
+    </div>
+
+    <button class="floating-button" onclick="speakAllText()">
+        <ion-icon name="volume-high-outline" style="font-size: 24px;"></ion-icon>
+    </button>
+
+    <button class="floating-button-stop" onclick="stopSpeaking()">
+      <ion-icon name="stop-circle-outline" style="font-size: 24px;"></ion-icon>
+    </button>
+  
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function stopSpeaking() {
+      speechSynthesis.cancel();
+  }  
+  </script>
+
+
+
+
+</body>
+</html>
